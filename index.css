@@ -1,0 +1,143 @@
+/************************** ROOT **********************************/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Work+Sans&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    height: 1000px;
+    min-height: 100%;
+    max-height: 100%;
+    background: rgb(14, 186, 86);
+    background: linear-gradient(90deg, rgba(14, 186, 86, 1) 0%, rgba(121, 9, 71, 1) 35%, rgba(0, 212, 255, 1) 89%);
+}
+
+/************************** LAYOUT **********************************/
+
+.container {
+    width: 900px;
+    height: 400px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sedans {
+    width: 300px;
+    height: 400px;
+    background-color: hsl(31, 77%, 52%);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 40px 80px 40px 40px;
+}
+
+.suvs {
+    width: 300px;
+    height: 400px;
+    background-color: hsl(184, 100%, 22%);
+    padding: 40px 80px 40px 40px;
+}
+
+.luxury {
+    width: 300px;
+    height: 400px;
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 40px 80px 40px 40px;
+}
+
+/************************** VARIABLES **********************************/
+
+h1 {
+    margin-top: 25px;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p {
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    color: hsla(0, 0%, 100%, 0.75);
+    letter-spacing: 1px;
+}
+
+button {
+    margin: 60px 0;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 110px;
+    border: 1px solid #ffffff;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.lm-1 {
+
+    color: hsl(31, 77%, 52%);
+    font-weight: bold;
+}
+
+.lm-2 {
+
+    color: hsl(184, 100%, 22%);
+    font-weight: bold;
+}
+
+.lm-3 {
+
+    color: hsl(179, 100%, 13%);
+    font-weight: bold;
+}
+
+/************************** MEDIA QUERIES **********************************/
+
+@media (max-width: 786px) {
+    html{
+        
+        height: 1500px;
+    }
+    .container {
+        flex-direction: column;
+        width: 300px;
+        height: 900px;
+        padding: 200px;
+    }
+
+    button {
+        margin: 5px 0;
+    }
+
+    .sedans {
+        padding: 30px 80px 30px 40px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 5px;
+    }
+
+    .suvs {
+        padding: 30px 80px 30px 40px;
+    }
+
+    .luxury {
+        padding: 30px 80px 30px 40px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+    }
+}
